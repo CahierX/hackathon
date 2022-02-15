@@ -1,0 +1,7 @@
+{
+  "title": "Hackathon",
+  "helloWorld": "Hello World chen xi",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  }
+}
