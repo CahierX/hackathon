@@ -3,14 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hackathon/themes/colors.dart';
 import 'package:hackathon/utils/platform/index.dart';
-
+import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'app.dart';
 import 'config/config.dart';
 import 'config/global.dart';
 
 const debug = true;
 
-void main(List<String> args) => Global.init(Config.packageEnvDevelopment).then((e) async {
+void main(List<String> args) =>
+    Global.init(Config.packageEnvDevelopment).then((e) async {
       if (runWebViewTitleBarWidget(args)) {
         return;
       }
@@ -18,6 +19,15 @@ void main(List<String> args) => Global.init(Config.packageEnvDevelopment).then((
       SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
           .then((_) {
         runApp(const HackathonApp());
+        doWhenWindowReady(() {
+          final win = appWindow;
+          const initialSize = Size(920, 720);
+          win.minSize = initialSize;
+          win.size = initialSize;
+          win.alignment = Alignment.center;
+          win.title = "How to use system tray with Flutter";
+          win.show();
+        });
       });
 
       SystemUiOverlayStyle systemUiOverlayStyle = const SystemUiOverlayStyle(
