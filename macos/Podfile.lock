@@ -1,53 +1,114 @@
 PODS:
+  - bitsdojo_window_macos (0.0.1):
+    - FlutterMacOS
   - connectivity_macos (0.0.1):
     - FlutterMacOS
     - Reachability
   - desktop_webview_window (0.0.1):
     - FlutterMacOS
+  - FFmpeg (5.0):
+    - FFmpeg/FFmpeg (= 5.0)
+  - FFmpeg/FFmpeg (5.0):
+    - OpenSSL
   - FlutterMacOS (1.0.0)
+  - KSPlayer (1.0):
+    - KSPlayer/Audio (= 1.0)
+    - KSPlayer/AVPlayer (= 1.0)
+    - KSPlayer/Core (= 1.0)
+    - KSPlayer/MEPlayer (= 1.0)
+    - KSPlayer/Metal (= 1.0)
+    - KSPlayer/Subtitle (= 1.0)
+    - KSPlayer/SwiftUI (= 1.0)
+    - KSPlayer/Video (= 1.0)
+  - KSPlayer/Audio (1.0):
+    - KSPlayer/Core
+  - KSPlayer/AVPlayer (1.0)
+  - KSPlayer/Core (1.0):
+    - KSPlayer/AVPlayer
+  - KSPlayer/MEPlayer (1.0):
+    - FFmpeg
+    - KSPlayer/AVPlayer
+    - KSPlayer/Metal
+    - KSPlayer/Subtitle
+  - KSPlayer/Metal (1.0)
+  - KSPlayer/Subtitle (1.0)
+  - KSPlayer/SwiftUI (1.0):
+    - KSPlayer/AVPlayer
+  - KSPlayer/Video (1.0):
+    - KSPlayer/Core
+    - KSPlayer/Subtitle
+  - OpenSSL (3.0.1):
+    - OpenSSL/OpenSSL (= 3.0.1)
+  - OpenSSL/OpenSSL (3.0.1)
   - package_info (0.0.1):
     - FlutterMacOS
   - Reachability (3.2)
   - shared_preferences_macos (0.0.1):
     - FlutterMacOS
+  - SwiftLint (0.46.2)
+  - system_tray (0.0.1):
+    - FlutterMacOS
   - url_launcher_macos (0.0.1):
     - FlutterMacOS
 
 DEPENDENCIES:
+  - bitsdojo_window_macos (from `Flutter/ephemeral/.symlinks/plugins/bitsdojo_window_macos/macos`)
   - connectivity_macos (from `Flutter/ephemeral/.symlinks/plugins/connectivity_macos/macos`)
   - desktop_webview_window (from `Flutter/ephemeral/.symlinks/plugins/desktop_webview_window/macos`)
+  - FFmpeg (from `./`)
   - FlutterMacOS (from `Flutter/ephemeral`)
+  - KSPlayer (from `./`)
+  - OpenSSL (from `./`)
   - package_info (from `Flutter/ephemeral/.symlinks/plugins/package_info/macos`)
   - shared_preferences_macos (from `Flutter/ephemeral/.symlinks/plugins/shared_preferences_macos/macos`)
+  - SwiftLint
+  - system_tray (from `Flutter/ephemeral/.symlinks/plugins/system_tray/macos`)
   - url_launcher_macos (from `Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/macos`)
 
 SPEC REPOS:
   trunk:
     - Reachability
+    - SwiftLint
 
 EXTERNAL SOURCES:
+  bitsdojo_window_macos:
+    :path: Flutter/ephemeral/.symlinks/plugins/bitsdojo_window_macos/macos
   connectivity_macos:
     :path: Flutter/ephemeral/.symlinks/plugins/connectivity_macos/macos
   desktop_webview_window:
     :path: Flutter/ephemeral/.symlinks/plugins/desktop_webview_window/macos
+  FFmpeg:
+    :path: "./"
   FlutterMacOS:
     :path: Flutter/ephemeral
+  KSPlayer:
+    :path: "./"
+  OpenSSL:
+    :path: "./"
   package_info:
     :path: Flutter/ephemeral/.symlinks/plugins/package_info/macos
   shared_preferences_macos:
     :path: Flutter/ephemeral/.symlinks/plugins/shared_preferences_macos/macos
+  system_tray:
+    :path: Flutter/ephemeral/.symlinks/plugins/system_tray/macos
   url_launcher_macos:
     :path: Flutter/ephemeral/.symlinks/plugins/url_launcher_macos/macos
 
 SPEC CHECKSUMS:
+  bitsdojo_window_macos: 7e9b1bbb09bdce418d9657ead7fc9d824203ff0d
   connectivity_macos: 5dae6ee11d320fac7c05f0d08bd08fc32b5514d9
   desktop_webview_window: d4365e71bcd4e1aa0c14cf0377aa24db0c16a7e2
+  FFmpeg: 6593f811126654982330f647e8c0a54b5fb38257
   FlutterMacOS: 57701585bf7de1b3fc2bb61f6378d73bbdea8424
+  KSPlayer: f8dd9c7cac508db3ce1bd63288c1092dd6253440
+  OpenSSL: a253b4b80f6c9512a45960472ddc5140342356bf
   package_info: 6eba2fd8d3371dda2d85c8db6fe97488f24b74b2
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  shared_preferences_macos: 480ce071d0666e37cef23fe6c702293a3d21799e
-  url_launcher_macos: 45af3d61de06997666568a7149c1be98b41c95d4
+  shared_preferences_macos: a64dc611287ed6cbe28fd1297898db1336975727
+  SwiftLint: 6bc52a21f0fd44cab9aa2dc8e534fb9f5e3ec507
+  system_tray: e53c972838c69589ff2e77d6d3abfd71332f9e5d
+  url_launcher_macos: 597e05b8e514239626bcf4a850fcf9ef5c856ec3
 
-PODFILE CHECKSUM: c7161fcf45d4fd9025dc0f48a76d6e64e52f8176
+PODFILE CHECKSUM: 3c3ea715a9bf9d24230a580367c8f3275818a2ef
 
-COCOAPODS: 1.11.0
+COCOAPODS: 1.10.1

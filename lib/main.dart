@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: chenebenzheng
  * @Date: 2022-02-15 11:20:07
- * @LastEditTime: 2022-02-16 15:06:12
+ * @LastEditTime: 2022-02-21 15:17:43
  * @LastEditors: chenebenzheng
  * @Reference: 
  */
@@ -11,9 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hackathon/themes/colors.dart';
 import 'package:hackathon/utils/platform/index.dart';
-import 'package:hackathon/views/poetry/app.dart';
-
-// import 'app.dart';
+import 'package:bitsdojo_window/bitsdojo_window.dart';
+import 'app.dart';
 import 'config/config.dart';
 import 'config/global.dart';
 
@@ -27,7 +26,16 @@ void main(List<String> args) =>
       WidgetsFlutterBinding.ensureInitialized();
       SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
           .then((_) {
-        runApp(const PoetryApp());
+        runApp(const HackathonApp());
+        doWhenWindowReady(() {
+          final win = appWindow;
+          const initialSize = Size(920, 720);
+          win.minSize = initialSize;
+          win.size = initialSize;
+          win.alignment = Alignment.center;
+          win.title = "How to use system tray with Flutter";
+          win.show();
+        });
       });
 
       SystemUiOverlayStyle systemUiOverlayStyle = const SystemUiOverlayStyle(
