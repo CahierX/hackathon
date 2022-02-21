@@ -1,15 +1,25 @@
+/*
+ * @Description: 
+ * @Author: chenebenzheng
+ * @Date: 2022-02-15 11:20:07
+ * @LastEditTime: 2022-02-16 15:27:26
+ * @LastEditors: chenebenzheng
+ * @Reference: 
+ */
 /// @author: chenxiaoxi
 /// @date: 2022/1/25
 /// @description：index.dart
 import 'package:flutter/material.dart';
 import 'package:hackathon/views/dashboard/index.dart';
 import 'package:hackathon/views/movies/play.dart';
+import 'package:hackathon/views/poetry/views/index.dart';
 
 /// 路由关系映射表，path => Widget
 Map<String, WidgetBuilder> routes = {
   "/": (BuildContext context) => const Dashboard(),
   "/dashboard": (BuildContext context) => const Dashboard(),
   "/play": (BuildContext context) => const MPlay(),
+  "/poetry": (BuildContext context) => const PoetryApp(),
 };
 
 /// 提取路由的参数 demo:Navigator.pushNamed(context, '/')

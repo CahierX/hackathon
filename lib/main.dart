@@ -1,23 +1,33 @@
+/*
+ * @Description: 
+ * @Author: chenebenzheng
+ * @Date: 2022-02-15 11:20:07
+ * @LastEditTime: 2022-02-16 15:06:12
+ * @LastEditors: chenebenzheng
+ * @Reference: 
+ */
 import 'package:desktop_webview_window/desktop_webview_window.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hackathon/themes/colors.dart';
 import 'package:hackathon/utils/platform/index.dart';
+import 'package:hackathon/views/poetry/app.dart';
 
-import 'app.dart';
+// import 'app.dart';
 import 'config/config.dart';
 import 'config/global.dart';
 
 const debug = true;
 
-void main(List<String> args) => Global.init(Config.packageEnvDevelopment).then((e) async {
+void main(List<String> args) =>
+    Global.init(Config.packageEnvDevelopment).then((e) async {
       if (runWebViewTitleBarWidget(args)) {
         return;
       }
       WidgetsFlutterBinding.ensureInitialized();
       SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
           .then((_) {
-        runApp(const HackathonApp());
+        runApp(const PoetryApp());
       });
 
       SystemUiOverlayStyle systemUiOverlayStyle = const SystemUiOverlayStyle(

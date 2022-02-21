@@ -1,0 +1,75 @@
+PODS:
+  - BIJKPlayer (0.7.16)
+  - connectivity (0.0.1):
+    - Flutter
+    - Reachability
+  - device_info (0.0.1):
+    - Flutter
+  - fijkplayer (0.10.1):
+    - BIJKPlayer (~> 0.7.16)
+    - Flutter
+  - Flutter (1.0.0)
+  - package_info (0.0.1):
+    - Flutter
+  - "permission_handler (5.1.0+2)":
+    - Flutter
+  - Reachability (3.2)
+  - shared_preferences_ios (0.0.1):
+    - Flutter
+  - url_launcher_ios (0.0.1):
+    - Flutter
+  - webview_flutter_wkwebview (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - connectivity (from `.symlinks/plugins/connectivity/ios`)
+  - device_info (from `.symlinks/plugins/device_info/ios`)
+  - fijkplayer (from `.symlinks/plugins/fijkplayer/ios`)
+  - Flutter (from `Flutter`)
+  - package_info (from `.symlinks/plugins/package_info/ios`)
+  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+  - shared_preferences_ios (from `.symlinks/plugins/shared_preferences_ios/ios`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+  - webview_flutter_wkwebview (from `.symlinks/plugins/webview_flutter_wkwebview/ios`)
+
+SPEC REPOS:
+  trunk:
+    - BIJKPlayer
+    - Reachability
+
+EXTERNAL SOURCES:
+  connectivity:
+    :path: ".symlinks/plugins/connectivity/ios"
+  device_info:
+    :path: ".symlinks/plugins/device_info/ios"
+  fijkplayer:
+    :path: ".symlinks/plugins/fijkplayer/ios"
+  Flutter:
+    :path: Flutter
+  package_info:
+    :path: ".symlinks/plugins/package_info/ios"
+  permission_handler:
+    :path: ".symlinks/plugins/permission_handler/ios"
+  shared_preferences_ios:
+    :path: ".symlinks/plugins/shared_preferences_ios/ios"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+  webview_flutter_wkwebview:
+    :path: ".symlinks/plugins/webview_flutter_wkwebview/ios"
+
+SPEC CHECKSUMS:
+  BIJKPlayer: 4c5d66e5cb99ae5bade6f22a4fcc031722a81c64
+  connectivity: c4130b2985d4ef6fd26f9702e886bd5260681467
+  device_info: d7d233b645a32c40dfdc212de5cf646ca482f175
+  fijkplayer: 5ecf78e80cb97eed64cc170b094a4f691d9b9691
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  package_info: 873975fc26034f0b863a300ad47e7f1ac6c7ec62
+  permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  shared_preferences_ios: aef470a42dc4675a1cdd50e3158b42e3d1232b32
+  url_launcher_ios: 02f1989d4e14e998335b02b67a7590fa34f971af
+  webview_flutter_wkwebview: 005fbd90c888a42c5690919a1527ecc6649e1162
+
+PODFILE CHECKSUM: 0362ba7422b21b4fd091597c4f8d13a0c5ebb6dc
+
+COCOAPODS: 1.11.2

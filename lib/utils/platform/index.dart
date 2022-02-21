@@ -149,6 +149,10 @@ bool isWindows() {
   return PlatformInfo.instance.isWindows();
 }
 
+bool isMobile() {
+  return PlatformInfo.instance.isIos() || PlatformInfo.instance.isAndroid();
+}
+
 Future getPlatformInfo() async {
   return PlatformInfo.instance.getPlatformInfo();
 }

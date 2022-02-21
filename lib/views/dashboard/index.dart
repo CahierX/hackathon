@@ -243,19 +243,16 @@ class _DashboardState extends State<Dashboard> {
                         style: ElevatedButton.styleFrom(
                             primary: Color.fromRGBO(150, 164, 139, 1)),
                         onPressed: () {
-                          Navigator.pushNamed(context, "/play",
-                              arguments: {"url": "http://tiankongzy.com/index.php/vod/detail/id/61267.html"});
+                          Navigator.pushNamed(context, "/play", arguments: {
+                            "url":
+                                "http://tiankongzy.com/index.php/vod/detail/id/61267.html"
+                          });
                         }),
                   ))
             ],
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
